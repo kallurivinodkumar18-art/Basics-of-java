@@ -3,3 +3,111 @@
 1992 : STAR7 DEMO    :A handheld prototype(*7) shows Oak running on custom hardware.
 1995 : RENAMED JAVA  :"Oak  is already trademarked;java is publicly announced in may 1995.
 1996 : JDK 1.0       :first official release (january 1996) _ java goes mainsstream.
+Java has continuously evolved over the years through regular updates. Each major version introduced new features, improved performance and security, and made programming easier.
+Java Versions and Their Features
+ Java 1.0 — January 1996
+JVM (Java Virtual Machine)
+ Core libraries
+-Applets
+- Introduced the concept of "Write Once, Run Anywhere."
+2. Java 5 — September 2004
+- Generics
+- Annotations
+- Enums
+- Enhanced for loop
+3. Java 8 — May 2014
+- Lambda expressions
+- Stream API
+- New Date/Time API
+4. Java 11 — September 2018
+- First LTS (Long-Term Support) release of the 6-month release era
+- Standard HTTP Client
+5. Java 17 — September 2021
+- Records
+- Sealed classes
+- Text blocks
+- Spring Boot 3 baseline
+6. Java 21 — September 2023
+- Virtual threads
+- Pattern matching for switch
+- Record patterns
+7. Java 25 — September 2025
+- Compact source files
+- Scoped values
+- Compact object headers
+Important Point
+LTS — Long-Term Support
+LTS (Long-Term Support) is a Java version that receives long-term updates and support.
+Remember
+Java has continuously evolved by:
+- Introducing new features
+- Improving performance
+- Improving security
+- Simplifying programming
+In short: Java started with the goal of "Write Once, Run Anywhere" and has continuously improved through new versions and features.
+
+
+
+  Data Types in JAVA
+1)Numeric Data Types
+integer:
+int,short,long,byte.
+floating point:
+float,Double
+2)Non-Numeric Data Types:
+  Boolean,Char
+3)Non-Primitive Data Types:
+  String,Array
+
+    
+variables rules
+1. Must start with a letter, underscore (_) or dollar sign ($).
+2. Cannot start with a number.
+3. Cannot contain spaces.
+4. Special characters are not allowed, except _ and $.
+5. Java keywords cannot be used as variable names.
+6. Variable names are case-sensitive.
+7. Can contain letters, digits, underscores and dollar signs after the first character.
+8. Variable names can be of any length.
+
+
+Method Explanation
+
+| Scanner method   | Example     | Return type |
+| ---------------- | ----------- | ----------- |
+| nextInt()        | 25          | int         |
+| nextLong()       | 9876543210L | long        |
+| nextFloat()      | 85.5f       | float       |
+| nextDouble()     | 25000.75    | double      |
+| next()           | Vehu        | String      |
+| nextLine()       | Hello Java  | String      |
+| next().charAt(0) | A           | char        |
+| nextBoolean()    | true        | boolean     |
+
+SCANNER PROGRAM:
+import java.util.Scanner;
+
+class Intro {
+    public static void main(String [] args) {
+        Scanner sc = new Scanner(System.in);
+        int age;
+        long salary;
+        float average;
+        double total;
+        String employee_name;
+        System.out.println("==");
+        age=sc.nextInt();
+        salary=sc.nextLong();
+        average=sc.nextFloat();
+        total=sc.nextDouble();
+        employee_name=sc.nextLine();
+        System.out.println(age);
+         System.out.println(salary);
+          System.out.println(average);
+           System.out.println(total);
+            System.out.println(employee_name);
+    }
+}
+
+
+
