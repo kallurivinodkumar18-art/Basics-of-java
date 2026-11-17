@@ -4,3 +4,114 @@ Looping	    :for, while, do-while:	Repeats a code block multiple times.
 Jump	      :break, continue, return	 :Exits or skips ahead in loops and functions.
 
 
+Syntax:
+if (condition) {
+    // block of code
+}
+
+program:
+import java.util.Scanner;
+public class condition {
+    public static void main(String[] args){
+        Scanner obj =new Scanner(System.in);
+        System.out.println("enter a number: ");
+        int a =obj.nextInt();
+        int b =obj.nextInt();
+        if(a<=b){
+            System.out.println("condition is true");
+
+        }
+
+    }
+    
+}
+
+syntax:
+if condition{
+//block of the code
+}
+else{
+//block of the code
+}
+
+program:
+
+import java.util.Scanner;
+
+public class Marks {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter your marks:");
+        int marks = sc.nextInt();
+
+        if (marks >= 35) {
+            System.out.println("Pass");
+        }
+        else {
+            System.out.println("Fail");
+        }
+
+        sc.close();
+    }
+}
+
+Syntax:
+if condition1{
+//block of the code
+}
+else if condition2{
+//block of the code
+}
+else if condition3{
+//block of the code
+}
+else if condition4{
+//block of the code
+}
+else{
+//block of the code
+}
+
+program:
+
+import java.util.Scanner;
+
+public class Marks {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter your marks:");
+        int marks = sc.nextInt();
+
+        if (marks >= 90) {
+            System.out.println("Grade A");
+        }
+        else if (marks >= 80) {
+            System.out.println("Grade B");
+        }
+        else if (marks >= 70) {
+            System.out.println("Grade C");
+        }
+        else if (marks >= 35) {
+            System.out.println("Pass");
+        }
+        else {
+            System.out.println("Fail");
+        }
+
+        sc.close();
+    }
+}
+
+Syntax: 
+nested if
+if condition1{
+if condition2{
+\\block of code statement2
+}
+\\block of code statement1
+
+
