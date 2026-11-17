@@ -1,0 +1,4 @@
+
+Conditional	if, if else,else if ladder,nested if, switch	Chooses which code block to run based on a test.
+Looping	for, while, do-while	Repeats a code block multiple times.
+Jump	break, continue, return	Exits or skips ahead in loops and functions.
