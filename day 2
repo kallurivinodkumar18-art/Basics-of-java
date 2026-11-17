@@ -201,4 +201,134 @@ public class Days {
         sc.close();
     }
 }
-  LOOPING STATEMENTS:
+EXAMPLE:
+import java.util.Scanner;
+public class switchs {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a branch(1-10)");
+        int branch =sc.nextInt();
+        switch(branch){
+            case 1:
+                System.out.println("cse");
+                break;
+                case 2:
+                System.out.println("ece");
+                break;
+                case 3:
+                System.out.println("csd");
+                break;
+                case 4:
+                System.out.println("eee");
+                break;
+                case 5:
+                System.out.println("civil");
+                break;
+                case 6:
+                    System.out.println("mech");
+                    break;
+                    case 7:
+                        System.out.println("it");
+                        break;
+                        case 8:
+                            System.out.println("ai");
+                            break;
+                            case 9:
+                                System.out.println("ai&ds");
+                                break;
+                                case 10:
+                                System.out.println("ai&ml");
+                                break;
+                                default:
+                                    System.out.println("invalid branch");
+
+        }
+
+    }
+}
+example:
+import java.util.Scanner;
+
+public class swt {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter angle in degrees:");
+        double angle = sc.nextDouble();
+
+        System.out.println("1. sin");
+        System.out.println("2. cos");
+        System.out.println("3. tan");
+        System.out.println("4. cosec");
+        System.out.println("5. sec");
+        System.out.println("6. cot");
+
+        System.out.println("Enter your choice:");
+        int choice = sc.nextInt();
+
+        double rad = Math.toRadians(angle);
+
+        switch (choice) {
+
+            case 1:
+                System.out.println("sin = " + Math.sin(rad));
+                break;
+
+            case 2:
+                System.out.println("cos = " + Math.cos(rad));
+                break;
+
+            case 3:
+                System.out.println("tan = " + Math.tan(rad));
+                break;
+
+            case 4:
+                if (Math.sin(rad) != 0)
+                    System.out.println("cosec = " + 1 / Math.sin(rad));
+                else
+                    System.out.println("Undefined");
+                break;
+
+            case 5:
+                if (Math.cos(rad) != 0)
+                    System.out.println("sec = " + 1 / Math.cos(rad));
+                else
+                    System.out.println("Undefined");
+                break;
+
+            case 6:
+                if (Math.tan(rad) != 0)
+                    System.out.println("cot = " + 1 / Math.tan(rad));
+                else
+                    System.out.println("Undefined");
+                break;
+
+            default:
+                System.out.println("Invalid choice");
+        }
+
+        sc.close();
+    }
+}
+
+
+looping :
+syntax: for
+
+for (initialization; condition; updation) {
+    // block of code
+}
+
+program:
+public class ForLoop {
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+
+    }
+}
+
+
