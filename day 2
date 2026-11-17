@@ -114,4 +114,90 @@ if condition2{
 }
 \\block of code statement1
 
+program:
+import java.util.Scanner;
+public class nested {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a number");
+        int value = sc.nextInt();
+        if(value>=20){
+            if(value>20){
+                System.out.println("condition2");
+            }
+            System.out.println("condition1");
+        }
+    }
 
+    
+}
+
+syntax:
+switch:
+switch (expression) {
+
+    case value1:
+        // block of code
+        break;
+
+    case value2:
+        // block of code
+        break;
+
+    case value3:
+        // block of code
+        break;
+
+    default:
+        // block of code
+}
+
+program:
+
+import java.util.Scanner;
+
+public class Days {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a number (1-7):");
+        int day = sc.nextInt();
+
+        switch (day) {
+
+            case 1:
+                System.out.println("Monday");
+                break;
+
+            case 2:
+                System.out.println("Tuesday");
+                break;
+
+            case 3:
+                System.out.println("Wednesday");
+                break;
+
+            case 4:
+                System.out.println("Thursday");
+                break;
+
+            case 5:
+                System.out.println("Friday");
+                break;
+
+            case 6:
+                System.out.println("Saturday");
+                break;
+
+            case 7:
+                System.out.println("Sunday");
+                break;
+
+            default:
+                System.out.println("Invalid day number");
+        }
+
+        sc.close();
+    }
+}
